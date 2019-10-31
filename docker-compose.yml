@@ -7,7 +7,7 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-    command: nvidia-smi
+    command: /bin/bash
     tty: true
     stdin_open: true
     container_name: tensorflow-gpu-2
