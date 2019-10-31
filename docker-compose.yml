@@ -1,0 +1,13 @@
+version: '2.3'
+services:
+  tensorflow-gpu-2:
+    build: .
+    volumes:
+      - .:/user/src/app
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    command: nvidia-smi
+    tty: true
+    stdin_open: true
+    container_name: tensorflow-gpu-2
