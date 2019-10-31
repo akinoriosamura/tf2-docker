@@ -3,6 +3,7 @@ FROM tensorflow/tensorflow:latest-gpu-py3
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
     wget build-essential gcc zlib1g-dev git default-mysql-client default-libmysqlclient-dev \
+    vim \
     python3-dev \
     python3-pip \
     python3-setuptools \
