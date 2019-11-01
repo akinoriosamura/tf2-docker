@@ -1,14 +1,14 @@
 version: '2.3'
 services:
   tensorflow-gpu-2:
+    stdin_open: true
+    tty: true
+    command: /bin/bash
     build: .
+    container_name: tensorflow-gpu-2
     volumes:
-      - .:/user/src/app
+      - ./:/usr/src/app
       - /data:/data
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-    command: /bin/bash
-    tty: true
-    stdin_open: true
-    container_name: tensorflow-gpu-2
