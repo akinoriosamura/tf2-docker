@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "eef78e2e57921b5479cf6636401d9e0d712a9629b2dcb4a74d66d3274fe228a6"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "tf-coreml": {
+            "git": "https://github.com/tf-coreml/tf-coreml.git",
+            "ref": "dd3971316ffce85127971d00c331c0e10c95dbe5"
+        }
+    },
+    "develop": {}
+}
